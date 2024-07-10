@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked List Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Linked List Visualizer</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>About Linked List</h2>
+            <p>A linked list is a linear data structure where elements are not stored at contiguous memory locations. The elements, also called <strong>node, are linked using pointers.</strong> It has several operations:</p>
+            
+                <strong>Insert</strong>: Add an element to the linked list.</br>
+                <strong>Delete</strong>: Remove an element from the linked list.</br>
+                <strong>Traverse</strong>: Access each element of the linked list.
+            
+            <div class="data-structure">
+                <h2>Linked List</h2>
+                <div id="linkedlist" class="data-content"></div>
+                <div class="horizontal-operations">
+                    <button onclick="insertIntoLinkedList()" class="button">Insert</button>
+                    <button onclick="deleteFromLinkedList()" class="button">Delete</button>
+                    <button onclick="traverseLinkedList()" class="button">Traverse</button>
+                    <button onclick="sizeOfLinkedList()" class="button">Size</button>
+                </div>
+            </div>
+            <a href="index.html" class="button back-button">Back to Main Page</a>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p id="modal-message"></p>
+            </div>
+        </div>
+        <div id="modal-prompt" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModalPrompt()">&times;</span>
+                <p id="id1">Enter value to delete:</p>
+                <input type="text" id="delete-input">
+                <button onclick="confirmDeleteFromLinkedList()">Confirm</button>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Data Structure Visualizer. Contact us at <a href="mailto:vigneshranganathan@gmail.com">vigneshranganathan@gmail.com</a>.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

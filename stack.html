@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Stack Visualizer</h1>
+    </header>
+    <main>
+        <a href="index.html" class="button back-button">Back to Main Page</a>
+        <div class="container">
+            <h2>About Stack</h2>
+            <p>A stack is a linear data structure that follows the <strong>Last In First Out (LIFO) principle.</strong> It has two main operations:</p>
+                <strong>Push</strong>: Add an element to the top of the stack.</br>
+                <strong>Pop</strong>: Remove the top element from the stack.
+            <div class="data-structure">
+                <h2>Stack</h2>
+                <div id="stack" class="element-container"></div>
+                <div class="horizontal-operations">
+                    <button onclick="pushToStack()" class="button">Push</button>
+                    <button onclick="popFromStack()" class="button">Pop</button>
+                    <button onclick="sizeOfStack()" class="button">Size</button>
+                </div>
+            </div>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p id="modal-message"></p>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Data Structure Visualizer. Contact us at <a href="mailto:vigneshranganathan@gmail.com">vigneshranganathan@gmail.com</a>.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

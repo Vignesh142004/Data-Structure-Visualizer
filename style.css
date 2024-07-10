@@ -1,0 +1,338 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa 25%, #a7ffeb 50%, #b2dfdb 75%, #e0f7fa 100%);
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+header .logo {
+    width: 65px;
+    height: 65px;
+    background: transparent;
+    border-radius: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Main content styling */
+main {
+    min-height: 80vh;
+    position: relative;
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* Section title styling */
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #555;
+}
+
+/* Data structure container styling */
+.data-structure {
+    background-color: #e8f5e9;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.element {
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.element.push-animation {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.element.pop-animation {
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+/* Animation for data structure */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Buttons styling */
+.button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* CSS for button container and buttons */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.button-container button:hover {
+    background-color: #45a049;
+}
+
+/* CSS for stack.html and its components */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.data-structure {
+    background-color: #e8f5e9;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.data-structure h2 {
+    margin-top: 0;
+}
+
+.horizontal-operations {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.horizontal-operations button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+@media (min-width: 769px) {
+    .horizontal-operations {
+        flex-direction: row;
+    }
+}
+
+.horizontal-operations button:hover {
+    background-color: #45a049;
+}
+
+.element-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.element {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* CSS for size display */
+.size-display {
+    font-size: 1.2em;
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Modal Popup Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styling for modal-prompt */
+#modal-prompt {
+    display: none;
+}
+
+#modal-prompt .modal-content {
+    background-color: #4CAF50; /* Green background */
+}
+
+#modal-prompt p {
+    color: #fff; /* White text */
+    margin-bottom: 10px;
+}
+
+#modal-prompt input[type="text"],
+#modal-prompt button {
+    background-color: #fff; /* White background for input */
+    color: #4CAF50; /* Green text for input */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#modal-prompt button {
+    background-color: #4CAF50; /* Green background for button */
+    color: #fff; /* White text for button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#modal-prompt button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

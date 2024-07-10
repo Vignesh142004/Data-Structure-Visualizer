@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Array Visualizer</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>About Array</h2>
+            <p>An array is a data structure that can hold multiple elements of the same type in <strong>contiguous memory locations.</strong> It has several operations:</p>
+            
+                <strong>Insert</strong>: Add an element to the array.</br>
+                <strong>Delete</strong>: Remove an element from the array.</br>
+                <strong>Access</strong>: Access an element at a specific index in the array.
+            <div class="data-structure">
+                <h2>Array</h2>
+                <div id="array" class="data-content"></div>
+                <div class="horizontal-operations">
+                    <button onclick="insertIntoArray()" class="button">Insert</button>
+                    <button onclick="deleteFromArray()" class="button">Delete</button>
+                    <button onclick="accessArray()" class="button">Access Element</button>
+                    <button onclick="sizeOfArray()" class="button">Size</button>
+                </div>
+            </div>
+            <a href="index.html" class="button back-button">Back to Main Page</a>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p id="modal-message"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Data Structure Visualizer. Contact us at <a href="mailto:vigneshranganathan@gmail.com">vigneshranganathan@gmail.com</a>.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

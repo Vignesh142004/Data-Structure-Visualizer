@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Queue Visualizer</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>About Queue</h2>
+            <p>A queue is a linear data structure that follows the <strong>First In First Out (FIFO) principle.</strong> It has two main operations:</p>
+            
+                <strong>Enqueue</strong>: Add an element to the end of the queue.</br>
+                <strong>Dequeue</strong>: Remove the front element from the queue.
+        
+            <div class="data-structure">
+                <h2>Queue</h2>
+                <div id="queue" class="data-content"></div>
+                <div class="horizontal-operations">
+                    <button onclick="enqueue()" class="button">Enqueue</button>
+                    <button onclick="dequeue()" class="button">Dequeue</button>
+                    <button onclick="sizeOfQueue()" class="button">Size</button>
+                </div>
+            </div>
+            <a href="index.html" class="button back-button">Back to Main Page</a>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p id="modal-message"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Data Structure Visualizer. Contact us at <a href="mailto:vigneshranganathan@gmail.com">vigneshranganathan@gmail.com</a>.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
